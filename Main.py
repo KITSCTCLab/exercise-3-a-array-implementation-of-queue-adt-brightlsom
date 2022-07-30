@@ -70,7 +70,7 @@ class Solution:
         """
         # Write your code here
         if not self.is_stack_full():
-            self.stack.append(ch)
+            self.stack.append(character)
             self.top += 1
 
     def enqueue_character(self, character):
@@ -81,7 +81,7 @@ class Solution:
         """
         # Write your code here
         if not self.is_queue_full():
-            self.queue.append(ch)
+            self.queue.append(character)
             if self.rear == -1 and self.front == -1:
                 self.rear += 1
                 self.front += 1
